@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_gradient_third"
+    tools:context=".fragments.SecondaryFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:textColorHint="@color/black"
+
+        android:hint="Enter Height">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/binInput1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="sans-serif-smallcaps"
+
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="379dp"
+        android:layout_height="348dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="265dp"
+
+        android:hint="Enter Weight"
+        android:textColorHint="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/binInput2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="sans-serif-smallcaps"
+
+            android:inputType="number" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/SumBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/purplebtn"
+            android:text="@string/calculate"
+            android:textColor="#000000"
+
+            android:textColorLink="#000000" />
+
+        <TextView
+            android:id="@+id/sumOutput"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAlignment="center"
+            android:textColor="#252525"
+            android:textIsSelectable="true"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/indexfinal"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAlignment="center"
+            android:textColor="#252525"
+            android:textIsSelectable="true"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/sumOutput5"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#252525"
+            android:textIsSelectable="true"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/sumOutput2"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="#252525"
+            android:textIsSelectable="true"
+            android:textSize="30sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="171dp"
+        android:layout_height="89dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="312dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="365dp"
+        android:layout_weight="1"
+        android:text="Substract"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="92dp"
+        android:layout_height="60dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="336dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="432dp"
+        android:layout_weight="1"
+        android:text="Add"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
